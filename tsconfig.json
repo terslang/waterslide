@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "jsx": "react-jsx",        // ← new transform for React 17+
+    "skipLibCheck": true,      // ← skip type-checking 3rd-party libs
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // …your other flags…
+  }
+}
