@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# Waterslide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Waterslide** is a browser-based code playground inspired by VS Code, featuring a file explorer, Monaco code editor, and an interactive terminal with Python execution via Pyodide. It uses BrowserFS for a virtual filesystem and xterm.js for a realistic terminal experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **VS Code–style File Explorer:**  
+  Create, delete, and navigate files and folders in a virtual filesystem.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Monaco Code Editor:**  
+  Syntax highlighting, code folding, minimap, word wrap, and more.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Integrated Terminal:**  
+  Real shell-like terminal with command history, file operations, and Python execution.
+
+- **Python Support:**  
+  Run Python scripts in-browser using Pyodide.
+
+- **Modern UI:**  
+  Subtle scrollbars, dark theme, and responsive layout.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```sh
+git clone https://github.com/yourusername/waterslide.git
+cd waterslide
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Running the App
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Usage
+
+- **File Explorer:**  
+  Click folders to expand/collapse. Use the `+ File` and `+ Folder` buttons to add new items. Selecting a file opens it in the editor.
+
+- **Editor:**  
+  Edit code with Monaco features. Changes are auto-saved to the virtual filesystem.
+
+- **Terminal:**  
+  Use commands like `ls`, `cd`, `cat`, `touch`, `mkdir`, `rm`, `pwd`, `clear`, `echo`, and `python <file.py>`.  
+  Example:  
+  ```
+  python main.py
+  ```
+
+---
+
+## Technologies Used
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+- [xterm.js](https://xtermjs.org/)
+- [BrowserFS](https://github.com/jvilk/BrowserFS)
+- [Pyodide](https://pyodide.org/)
+
+---
+
+## License
+
+This project is licensed under the [GNU GPLv3](LICENSE).
+
+---
+
+## Credits
+
+- [VS Code](https://code.visualstudio.com/) for UI inspiration
+- [Pyodide](https://pyodide.org/) for Python in the browser
+
+---
+
+## Contributing
+
+Pull requests and issues are welcome! Please open an issue to discuss your idea or bug before submitting a PR.
+
+---
