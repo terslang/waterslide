@@ -1,4 +1,4 @@
-import { Terminal } from 'xterm';
+import { Terminal } from '@xterm/xterm';
 import { executeCommand } from './shellProcessor';
 import type { PyodideInterface } from 'pyodide';
 

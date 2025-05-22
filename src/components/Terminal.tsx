@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { Terminal } from 'xterm';
-import 'xterm/css/xterm.css';
+import { Terminal } from '@xterm/xterm';
+import '@xterm/xterm/css/xterm.css';
 import { initializeShell } from '../shell/shellEngine';
 import { usePyodide } from '../hooks/usePyodide';
 
