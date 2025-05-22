@@ -46,7 +46,6 @@ function App() {
           width: 250, 
           borderRight: '1px solid #444', 
           overflowY: 'auto', 
-          padding: '0.5rem',
           /* Subtle scrollbar styles (Firefox) */
           scrollbarWidth: 'thin',
           scrollbarColor: '#888 transparent'
@@ -71,7 +70,6 @@ function App() {
           style={{ 
             flex: 1, 
             overflowY: 'auto', 
-            padding: '0.5rem',
             /* Subtle scrollbar - Webkit */
             WebkitOverflowScrolling: 'touch'
           }}
@@ -88,7 +86,6 @@ function App() {
             borderTop: '1px solid #444', 
             backgroundColor: '#2e2e2e', 
             overflowY: 'auto', 
-            padding: '0.5rem',
             /* Subtle scrollbar styles (Firefox) */
             scrollbarWidth: 'thin',
             scrollbarColor: '#888 transparent'

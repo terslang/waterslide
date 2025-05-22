@@ -41,7 +41,6 @@ const TerminalView: React.FC = () => {
         height: '100%',
         width: '100%',
         background: '#181818',
-        borderRadius: '6px',
         boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
         padding: '8px',
         overflow: 'hidden'
