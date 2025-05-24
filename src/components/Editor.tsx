@@ -51,8 +51,9 @@ const CodeEditor: React.FC<Props> = ({ fileName, code, onChange }) => {
         codeLens: true,
         inlineSuggest: {},
         suggestOnTriggerCharacters: true,
-        glyphMargin: true,
-        // You can add additional options here, e.g., fontSize, formatOnPaste, etc.
+        glyphMargin: false,                     // Turn off left glyph margin
+        lineNumbersMinChars: 2,                 // change from default (5) to 2
+        lineDecorationsWidth: 0,                // remove extra gap from left
       }}
     />
   );
